@@ -1,0 +1,96 @@
+body {
+    min-height: 100vh;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(wp8113699-minimalist-8k-wallpapers.jpg);
+    background-size: cover;
+}
+
+.holder {
+    width: 80vw;
+    height: 80vh;
+    margin: 5rem auto;
+}
+
+.images {
+    width: 70vw;
+    height: 70vh;
+    margin: 2rem auto;
+    position: relative;
+    top: 3rem;
+}
+
+.cards {
+    border: 3px solid rgb(81, 70, 70);
+    border-radius: 1.5rem;
+    margin: auto;
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 2s;
+    background-size: cover;
+}
+
+.cards:first-child {
+    background-image: url(hp1.jpg);
+    cursor: pointer;
+    z-index: 4;
+}
+
+.cards:nth-child(2) {
+    background-image: url(hp5.jpg);
+}
+
+.cards:nth-child(3) {
+    background-image: url(hp3.jpg);
+}
+
+.cards:nth-child(4) {
+    background-image: url(hp4.jpg);
+}
+
+.cards:nth-child(5) {
+    background-image: url(hp6.jpg);
+}
+
+.cards:nth-child(6) {
+    background-image: url(hp7.jpg);
+}
+
+.cards:nth-child(7) {
+    background-image: url(hp2.jpg);
+}
+
+.cards:first-child:hover ~ div, .cards:first-child:hover {
+    box-shadow: 5px 5px 12px rgb(90, 105, 161);
+}
+
+.cards:first-child:hover ~ .cards:nth-child(2) {
+    transform: translateY(250px);
+}
+
+.cards:first-child:hover ~ .cards:nth-child(3) {
+    transform: translateY(150px)translateX(250px);
+}
+
+.cards:first-child:hover ~ .cards:nth-child(4) {
+    transform: translateX(250px)translateY(-150px);
+}
+
+.cards:first-child:hover ~ .cards:nth-child(5) {
+    transform: translateX(-250px)translateY(150px);
+}
+
+.cards:first-child:hover ~ .cards:nth-child(6) {
+    transform: translateY(-150px)translateX(-250px);
+}
+
+.cards:first-child:hover ~ .cards:nth-child(7) {
+    transform: translateY(-250px);
+}
